@@ -14,7 +14,7 @@ fullnameOverride: ""
 container:
   env:
     JAVA_OPTIONS: "-javaagent:applicationinsights-agent-3.0.0-PREVIEW.5.jar"
-    APPLICATIONINSIGHTS_CONNECTION_STRING: "InstrumentationKey=604540e4-82b4-48b9-8820-f44b5fe9b903"
+    APPLICATIONINSIGHTS_CONNECTION_STRING: "InstrumentationKey=****************************"
 serviceAccount:
   # Specifies whether a service account should be created
   create: false
