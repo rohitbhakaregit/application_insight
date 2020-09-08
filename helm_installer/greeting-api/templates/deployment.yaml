@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "greetingApi.fullname" . }}
+  name: {{ include "greeting-api.fullname" . }}
   labels:
-    {{- include "greetingApi.labels" . | nindent 4 }}
+    {{- include "greeting-api.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "greetingApi.selectorLabels" . | nindent 6 }}
+      {{- include "greeting-api.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "greetingApi.selectorLabels" . | nindent 8 }}
+        {{- include "greeting-api.selectorLabels" . | nindent 8 }}
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-      serviceAccountName: {{ include "greetingApi.serviceAccountName" . }}
+      serviceAccountName: {{ include "greeting-api.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
