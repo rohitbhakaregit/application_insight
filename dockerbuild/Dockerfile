@@ -8,5 +8,4 @@ ADD *.jar ${WORKDIR}/app.jar
 WORKDIR ${WORKDIR}
 EXPOSE 8080
 RUN printf "#!/bin/sh\nexec java \${JAVA_OPTIONS} -jar app.jar   \${@}\n" > entrypoint.sh && chmod 755 entrypoint.sh
-ENTRYPOINT [ "/app/entrypoint.sh" ]
-~                                   
+ENTRYPOINT [ "/app/entrypoint.sh" ]                          
