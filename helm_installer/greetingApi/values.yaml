@@ -5,11 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: "futuremtech.azurecr.io/consumers"
+  repository: "1383/application_insight"
   pullPolicy: Always 
-  args: "--spring.profiles.active=qa"
-  AppVersion: "qa"
-
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
