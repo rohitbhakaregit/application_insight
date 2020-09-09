@@ -17,12 +17,12 @@ In this demo I created a docker image and used Helm 3 for AKS deployment.
 
 3. Build and push your docker image 
 ```
-  docker build -t \<dockerhub repo\> :\<tag\>
-  docker push \<dockerhub repo\>: \<tag\>
+  docker build -t <dockerhub repo> :<tag>
+  docker push <dockerhub repo>: <tag>
 ```
 #### Now go to helm_installer directory 
 
-4. Edit docker image name value in helm3 values.yaml
+4. Edit image name in helm3 /<values.yaml/>
 
    e.g:
    ```
@@ -36,7 +36,7 @@ In this demo I created a docker image and used Helm 3 for AKS deployment.
 
  5.  Deploy your application using helm command 
 ```
-helm install \<deployment-name\> greeting-api  -n \<namespace-name optional\>
+helm install <deployment-name> greeting-api  -n <namespace-name optional>
 ```
 e.g: 
 ```
