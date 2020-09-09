@@ -1,6 +1,6 @@
 # application_insight_demo
 
-In this demo I created a docker image and used Helm 3 for AKS deployment.
+In this demo, I created a docker image and used Helm 3 for AKS deployment.
 
 ## Deployment steps: 
 #### Go to dockerbuild directory 
