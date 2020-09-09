@@ -22,7 +22,7 @@ In this demo I created a docker image and used Helm 3 for AKS deployment.
 ```
 #### Now go to helm_installer directory 
 
-4. Edit image name in helm3 /<values.yaml/>
+4. Edit image name in helm3 <values.yaml>
 
    e.g:
    ```
