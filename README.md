@@ -4,10 +4,10 @@ In this demo I created a docker image and used Helm 3 for AKS deployment.
 
 ## Deployment steps: 
 
-### Go to dockerbuild directory 
+#### Go to dockerbuild directory 
 
 #### 1 Build .jar file [ I have referred https://spring.io/guides/gs/rest-service/]   
- #### 2 Copy and past your .jar file in dockerbuild directory 
+#### 2 Copy and past your .jar file in dockerbuild directory 
 
 ```
   ├── dockerbuild
@@ -22,7 +22,7 @@ In this demo I created a docker image and used Helm 3 for AKS deployment.
   docker build -t \<dockerhub repo\> :\<tag\>
   docker push \<dockerhub repo\>: \<tag\>
 ```
-### Now go to helm_installer directory 
+#### Now go to helm_installer directory 
 
 #### 4 Edit docker image name value in helm3 values.yaml
 
